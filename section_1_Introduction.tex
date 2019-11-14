@@ -1,3 +1,10 @@
 \section{Introduction}
 \label{sec:intro}
 Unveiling the mechanisms that control gene expression is a major challenge in biology. One of the most important tasks in this challenge is to identify \textbf{conserved regions} in deoxyribonucleic acid (DNA) for transcription factors. These \textit{short conserved regions} are known as motifs.
+
+Recent advancement in genome sequencing technology has made it possible to do sequencing of whole genome of different organisms. Also the advancement in gene expression analysis has allowed for the development of many computational methods for motif finding.
+
+There are basically two types of motif discovery algorthms; i.e. enumeration approach and probabilistic technique\cite{hashim2019review}. Enumeration Approach algorithms search for patterns present in each sequence. Motifs are predicted based on frequency of words and hamming distance between words. So, these algorithms are sometimes called Panted (l, d) Motif Problem (PMP), where motif length $= l$ and a maximum number of mismatches $= d$. Popular algorithms based on this approach are DREME \cite{karaboga2016discrete}, CisFinder\cite{bailey2011dreme}, MCES\cite{jia2014new}.
+
+Probabilistic approaches construct Position-Specific Weight Matrix (PSWM)
+
