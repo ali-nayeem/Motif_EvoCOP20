@@ -1,0 +1,77 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage{graphicx}
+\usepackage{hyperref}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+\renewcommand\UrlFont{\color{blue}\rmfamily}
+\usepackage{cite}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\usepackage{changepage}
+\usepackage{comment}
+\usepackage[title]{appendix}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage[font=scriptsize]{subcaption}
+\usepackage{color} % added by Bayzid
+\newcommand{\commentA}[1]{{\color{red} #1}}
+\newcommand{\commentM}[1]{{\color{blue} #1}}
+\usepackage{subcaption}
+\renewcommand{\algorithmiccomment}[1]{~{\scriptsize\ttfamily{/*#1*/}}}
+\usepackage{enumitem}
+
+%to squeeze space between sections, subsections and subsubsections
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+	{-8\p@ \@plus -4\p@ \@minus -4\p@}%
+	{6\p@ \@plus 4\p@ \@minus 4\p@}%
+	{\normalfont\large\bfseries\boldmath
+		\rightskip=\z@ \@plus 8em\pretolerance=10000 }}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+	{-8\p@ \@plus -4\p@ \@minus -4\p@}%
+	{6\p@ \@plus 4\p@ \@minus 4\p@}%
+	{\normalfont\normalsize\bfseries\boldmath
+		\rightskip=\z@ \@plus 8em\pretolerance=10000 }}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+	{-4\p@ \@plus -4\p@ \@minus -4\p@}%
+	{-1.5em \@plus -0.22em \@minus -0.1em}%
+	{\normalfont\normalsize\bfseries\boldmath}}
+\makeatother
+%\captionsetup{belowskip=-10pt}
+
+\begin{document}
+%
+\title{Improving accuracy of Estimated Species Tree Through Multi-objective Optimization}
+\author{}
+\institute{}
+%
+\maketitle              % typeset the header of the contribution
+%
+
+\input{section_0_Abstract} 
+\input{section_1_Introduction} 
+\input{section_2_Literature} 
+\input{section_3_Problem}
+\input{section_4_Methods}
+\input{section_5_Results}
+\input{section_6_Conclusion}
+
+
+%
+% ---- Bibliography ----
+%
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+%
+\bibliographystyle{splncs04}
+\bibliography{main_bib}
+\end{document}
